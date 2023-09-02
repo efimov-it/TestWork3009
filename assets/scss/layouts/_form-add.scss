@@ -1,0 +1,206 @@
+.form-add {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+    padding: vw(12px, 320px);
+    gap: vw(16px, 320px);
+    margin-bottom: vw(40px, 320px);
+
+    @media screen and (min-width: 526px) {
+        padding: vw(12px, 744px);
+        gap: vw(16px, 744px);
+        margin-bottom: vw(40px, 744px);
+    }
+    
+    @media screen and (min-width: 921px) {
+        border: solid #D6CECB;
+
+        width: vw(800px);
+        margin: 0px auto;
+        padding: vw(20px);
+        gap: vw(16px);
+        border-width: vw(1px);
+        border-radius: vw(20px);
+        margin-bottom: vw(40px);
+    }
+    
+    @media screen and (min-width: 1440px) {
+        width: 800px;
+        padding: 20px;
+        gap: 16px;
+        border-width: 1px;
+        border-radius: 20px;
+        margin-bottom: 40px;
+    }
+    
+    &_form {
+        display: flex;
+        flex-direction: column;
+
+        gap: vw(16px, 320px);
+
+        @media screen and (min-width: 526px) {
+            gap: vw(16px, 744px);
+        }
+
+        @media screen and (min-width: 921px) {
+            gap: vw(16px);
+        }
+
+        @media screen and (min-width: 1440px) {
+            gap: 16px;
+        }
+    }
+    
+    &_preview {
+        margin: 0px auto;
+        background-color: $gray-light;
+        overflow: hidden;
+
+        width: vw(200px, 320px);
+        height: vw(200px, 320px);
+        border-radius: vw(100px, 320px);
+
+        @media screen and (min-width: 526px) {
+            width: vw(200px, 744px);
+            height: vw(200px, 744px);
+            border-radius: vw(100px, 744px);
+        }
+        
+        @media screen and (min-width: 921px) {
+            width: vw(200px);
+            height: vw(200px);
+            border-radius: vw(100px);
+        }
+        
+        @media screen and (min-width: 1440px) {
+            width: 200px;
+            height: 200px;
+            border-radius: 100px;
+        }
+    }
+    
+    &_preview-image {
+        width: inherit;
+        height: inherit;
+        object-fit: cover;
+
+        @media screen and (min-width: 526px) {
+                
+        }
+        
+        @media screen and (min-width: 921px) {
+            
+        }
+        
+        @media screen and (min-width: 1440px) {
+            
+        }
+    }
+
+    
+    &_preview-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 600;
+        line-height: 100%;
+        background: $acent;
+        width: fit-content;
+        margin: 0px auto;
+        cursor: pointer;
+        transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+
+        height: vw(36px, 320px);
+        padding: 0px vw(16px, 320px);
+        font-size: vw(12px, 320px);
+        border-radius: vw(12px, 320px);
+
+        @media screen and (min-width: 526px) {
+            height: vw(36px, 744px);
+            padding: 0px vw(16px, 744px);
+            font-size: vw(12px, 744px);
+            border-radius: vw(12px, 744px);
+        }
+        
+        @media screen and (min-width: 921px) {
+            height: vw(40px);
+            padding: 0px vw(32px);
+            font-size: vw(16px);
+            border-radius: vw(12px);
+
+            &:hover {
+                background: $dark-light;
+                color: $white;
+            }
+        }
+        
+        @media screen and (min-width: 1440px) {
+            height: 40px;
+            padding: 0px 32px;
+            font-size: 16px;
+            border-radius: 12px;
+        }
+
+        &:active {
+            background: $dark-light;
+            color: $white;
+        }
+    }
+    
+    &_preview-button-input {
+        opacity: 0;
+        position: absolute;
+        z-index: -1;
+    }
+    
+    &_submit {
+        background: $acent;
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 600;
+        line-height: 100%;
+        text-align: center;
+        cursor: pointer;
+        transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+
+        border-radius: vw(12px, 320px);
+        height: vw(36px, 320px);
+        padding: 0px vw(12px, 320px);
+        font-size: vw(12px, 320px);
+
+        @media screen and (min-width: 526px) {
+            border-radius: vw(12px, 744px);
+            height: vw(36px, 744px);
+            padding: 0px vw(12px, 744px);
+            font-size: vw(12px, 744px);
+        }
+
+        @media screen and (min-width: 921px) {
+            border-radius: vw(12px);
+            height: vw(40px);
+            padding: 0px vw(12px);
+            font-size: vw(16px);
+
+            &:hover {
+                background: $dark-light;
+                color: $white;
+            }
+        }
+
+        @media screen and (min-width: 1440px) {
+            border-radius: 12px;
+            height: 40px;
+            padding: 0px 12px;
+            font-size: 16px;
+        }
+
+        &:active {
+            background: $dark-light;
+            color: $white;
+        }
+    }
+}
