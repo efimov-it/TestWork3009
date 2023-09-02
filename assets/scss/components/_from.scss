@@ -1,0 +1,179 @@
+.form {
+    display: flex;
+    flex-direction: column;
+
+    gap: vw(16px, 744px);
+
+    @media screen and (min-width: 526px) {
+        gap: vw(16px, 744px);
+    }
+    
+    @media screen and (min-width: 921px) {
+        gap: vw(16px);
+    }
+    
+    @media screen and (min-width: 1440px) {
+        gap: 16px;
+    }
+    
+    &_field {
+        width: 100%;
+        position: relative;
+        display: flex;
+        align-items: center;
+
+        @media screen and (min-width: 526px) {
+    
+        }
+        
+        @media screen and (min-width: 921px) {
+            
+        }
+        
+        @media screen and (min-width: 1440px) {
+            
+        }
+    }
+    
+    &_field-placeholder {
+        position: absolute;
+        user-select: none;
+        font-weight: 500;
+        line-height: 100%;
+        background: $white;
+        color: $gray;
+        cursor: text;
+        transition: font-size 0.3s ease-in-out, transform 0.3s ease-in-out;
+
+        font-size: vw(12px, 320px);
+        transform: translate3d(vw(8px, 320px), 0px, 0px);
+        margin-left: vw(-4px, 320px);
+        padding: 0px vw(4px, 320px);
+
+        @media screen and (min-width: 526px) {
+            font-size: vw(12px, 744px);
+            transform: translate3d(vw(8px, 744px), 0px, 0px);
+            margin-left: vw(-4px, 744px);
+            padding: 0px vw(4px, 744px);
+        }
+        
+        @media screen and (min-width: 921px) {
+            font-size: vw(16px);
+            transform: translate3d(vw(8px), 0px, 0px);
+            margin-left: vw(-4px);
+            padding: 0px vw(4px);
+        }
+        
+        @media screen and (min-width: 1440px) {
+            font-size: 16px;
+            transform: translate3d(8px, 0px, 0px);
+            margin-left: -4px;
+            padding: 0px 4px;
+        }
+    }
+    
+    &_field-input {
+        width: 100%;
+        font-weight: 500;
+        line-height: 100%;
+        border: solid $gray-light;
+        transition: border-color 0.3s ease-in-out;
+        outline: none;
+
+        height: vw(40px, 320px);
+        border-radius: vw(12px, 320px);
+        padding: 0px vw(12px, 320px);
+        border-width: vw(1px, 320px);
+        font-size: vw(12px, 320px);
+
+        @media screen and (min-width: 526px) {
+            height: vw(40px, 744px);
+            border-radius: vw(12px, 744px);
+            padding: 0px vw(12px, 744px);
+            border-width: vw(1px, 744px);
+            font-size: vw(12px, 744px);
+        }
+        
+        @media screen and (min-width: 921px) {
+            height: vw(40px);
+            border-radius: vw(12px);
+            padding: 0px vw(12px);
+            border-width: vw(1px);
+            font-size: vw(16px);
+        }
+        
+        @media screen and (min-width: 1440px) {
+            height: 40px;
+            border-radius: 12px;
+            padding: 0px 12px;
+            border-width: 1px;
+            font-size: 16px;
+        }
+
+        &::placeholder {
+            opacity: 0;
+        }
+
+        &:focus {
+            border-color: $acent;
+        }
+    }
+
+    &_field-input:not(:placeholder-shown) + &_field-placeholder,
+    &_field-input:focus + &_field-placeholder {
+
+        padding: 0px vw(4px, 320px);
+        font-size: vw(10px, 320px);
+        transform: translate3d(vw(8px, 320px), vw(-20px, 320px), 0px);
+
+        @media screen and (min-width: 526px) {
+            padding: 0px vw(4px, 744px);
+            font-size: vw(10px, 744px);
+            transform: translate3d(vw(8px, 744px), vw(-20px, 744px), 0px);
+        }
+        
+        @media screen and (min-width: 921px) {
+            padding: 0px vw(4px);
+            font-size: vw(12px);
+            transform: translate3d(vw(8px), vw(-20px), 0px);
+        }
+        
+        @media screen and (min-width: 1440px) {
+            padding: 0px 4px;
+            font-size: 12px;
+            transform: translate3d(8px, -20px, 0px);
+        }
+    }
+    
+    &_fields-row {
+        display: flex;
+        align-items: center;
+
+        gap: vw(16px, 320px);
+
+        @media screen and (min-width: 526px) {
+            gap: vw(16px, 744px);
+        }
+        
+        @media screen and (min-width: 921px) {
+            gap: vw(16px);
+        }
+        
+        @media screen and (min-width: 1440px) {
+            gap: 16px;
+        }
+    }
+}
+
+
+@media screen and (min-width: 526px) {
+    
+}
+
+@media screen and (min-width: 921px) {
+    
+}
+
+@media screen and (min-width: 1440px) {
+    
+}

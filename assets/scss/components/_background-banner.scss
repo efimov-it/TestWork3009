@@ -1,0 +1,36 @@
+.background_banner {
+    display: none;
+
+    @media screen and (min-width: 921px) {
+        display: block;
+        position: absolute;
+        z-index: -1;
+
+        top: vw(20px);
+        margin: 0px calc(50% - #{vw(700px)});
+        border-radius: vw(32px);
+        width: vw(1400px);
+        height: vw(400px);
+    }
+
+    @media screen and (min-width: 1440px) {
+        top: 20px;
+        margin: 0px calc(50% - 700px);
+        border-radius: 32px;
+        width: 1400px;
+        height: 400px;
+    }
+}
+
+
+@media screen and (min-width: 526px) {
+        
+}
+
+@media screen and (min-width: 921px) {
+    
+}
+
+@media screen and (min-width: 1440px) {
+    
+}

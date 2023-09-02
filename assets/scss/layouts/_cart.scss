@@ -1,0 +1,851 @@
+.cart-trigger {
+
+    @media screen and (min-width: 526px) {
+    
+    }
+    
+    @media screen and (min-width: 921px) {
+        
+    }
+    
+    @media screen and (min-width: 1440px) {
+        
+    }
+
+    &__active {
+        min-height: 100%;
+
+        @media screen and (min-width: 526px) {
+        
+        }
+        
+        @media screen and (min-width: 921px) {
+            
+        }
+        
+        @media screen and (min-width: 1440px) {
+            
+        }
+    }
+}
+
+.cart {
+    display: flex;
+    flex-direction: column;
+    background: $white;
+    max-height: 80vh;
+    transition: max-height 0.3s ease-in-out;
+    
+    border-radius: vw(12px, 320px) vw(12px, 320px) 0px 0px;
+    backdrop-filter: blur(vw(10px, 320px));
+    box-shadow: 0px vw(-10px, 320px) vw(20px, 320px) 0px rgba(68, 93, 91, 0.1);
+
+    @media screen and (min-width: 526px) {
+        border-radius: vw(12px, 744px) vw(12px, 744px) 0px 0px;
+        backdrop-filter: blur(vw(10px, 744px));
+        box-shadow: 0px vw(-10px, 744px) vw(20px, 744px) 0px rgba(68, 93, 91, 0.1);
+    }
+    
+    @media screen and (min-width: 921px) {
+        box-shadow: none;
+        background: rgba($color: $white, $alpha: 0.90);
+        border: solid #D6CECB;
+        background: rgba($color: $white, $alpha: 0.40);
+
+        border-radius: vw(20px);
+        border-width: vw(1px);
+        backdrop-filter: blur(vw(10px));
+        gap: vw(16px);
+        padding: vw(20px);
+    }
+    
+    @media screen and (min-width: 1440px) {
+        border-radius: 20px;
+        border-width: 1px;
+        backdrop-filter: blur(10px);
+        gap: 16px;
+        padding: 20px;
+    }
+
+    &__close {
+        @media screen and (max-width: 920px) {
+            max-height: vw(52px, 320px);
+            overflow: hidden;
+        }
+        
+        @media screen and (min-width: 526px) and (max-width: 920px) {
+            max-height: vw(52px, 744px);
+        }
+    }
+    
+    &_header {
+        display: flex;
+        align-items: center;
+        position: sticky;
+        top: 0px;
+        justify-content: space-between;
+        background: $white;
+        z-index: 1;
+
+        padding: vw(12px, 320px);
+        border-radius: vw(12px, 320px) vw(12px, 320px) 0px 0px;
+
+
+        @media screen and (min-width: 526px) {
+            padding: vw(12px, 744px);
+            border-radius: vw(12px, 744px) vw(12px, 744px) 0px 0px;
+        }
+        
+        @media screen and (min-width: 921px) {
+            margin: 0px;
+            padding: 0px;
+            background: none;
+        }
+        
+        @media screen and (min-width: 1440px) {
+            
+        }
+    }
+    
+    &_header-title {
+        display: flex;
+        align-items: baseline;
+        font-weight: 600;
+        line-height: 120%;
+
+        font-size: vw(20px, 320px);
+        gap: vw(4px, 320px);
+
+        @media screen and (min-width: 526px) {
+            font-size: vw(20px, 744px);
+            gap: vw(4px, 744px);
+        }
+        
+        @media screen and (min-width: 921px) {
+            font-size: vw(40px);
+            gap: vw(10px);
+        }
+        
+        @media screen and (min-width: 1440px) {
+            font-size: 40px;
+            gap: 10px;
+        }
+    }
+    
+    &_header-sub-title {
+        font-weight: 600;
+        line-height: 120%;
+        color: $acent-sec;
+
+        font-size: vw(16px, 320px);
+
+        @media screen and (min-width: 526px) {
+            font-size: vw(16px, 744px);
+        }
+        
+        @media screen and (min-width: 921px) {
+            font-size: vw(32px);
+        }
+        
+        @media screen and (min-width: 1440px) {
+            font-size: 32px;
+        }
+    }
+
+    &_show-button {
+        background: none;
+        border: none;
+        transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+        transform: rotate(180deg);
+        
+        width: vw(28px, 320px);
+        height: vw(28px, 320px);
+
+        @media screen and (min-width: 526px) {
+            width: vw(28px, 744px);
+            height: vw(28px, 744px);
+        }
+
+        &__close {
+            transform: rotate(0deg);
+
+            @media screen and (min-width: 526px) {
+    
+            }
+        }
+
+
+        &:active {
+            opacity: 0.5;
+        }
+    }
+
+    
+    &_content {
+        display: flex;
+        flex-direction: column;
+        overflow-y: auto;
+
+        gap: vw(24px, 320px);
+        padding: vw(24px, 320px) vw(12px, 320px);
+
+        @media screen and (min-width: 526px) {
+            gap: vw(24px, 744px);
+            padding: vw(24px, 744px) vw(12px, 744px);
+        }
+
+        @media screen and (min-width: 921px) {
+            padding: 0px;
+            max-height: none;
+            height: auto;
+            overflow: visible;
+            gap: vw(16px);
+        }
+
+        @media screen and (min-width: 1440px) {
+            gap: 16px;
+        }
+
+        &__empty {
+            gap: 0px;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    
+    &_empty-icon {
+        width: vw(80px, 320px);
+        height: vw(80px, 320px);
+        
+        @media screen and (min-width: 526px) {
+            width: vw(80px, 744px);
+            height: vw(80px, 744px);
+        }
+        
+        @media screen and (min-width: 921px) {
+            width: vw(128px);
+            height: vw(128px);
+        }
+        
+        @media screen and (min-width: 1440px) {
+            width: 128px;
+            height: 128px;
+        }
+    }
+    
+    &_empty-text {
+        text-align: center;
+        font-weight: 500;
+        line-height: 120%;
+        
+        font-size: vw(16px, 320px);
+
+        @media screen and (min-width: 526px) {
+            font-size: vw(16px, 744px);
+        }
+        
+        @media screen and (min-width: 921px) {
+            font-size: vw(20px);
+        }
+        
+        @media screen and (min-width: 1440px) {
+            font-size: 20px;
+        }
+    }
+    
+    &_content-manager {
+        font-weight: 500;
+        line-height: 120%;
+
+        font-size: vw(12px, 320px);
+
+        @media screen and (min-width: 526px) {
+            font-size: vw(12px, 744px);
+        }
+
+        @media screen and (min-width: 921px) {
+            font-size: vw(16px);
+        }
+
+        @media screen and (min-width: 1440px) {
+            font-size: 16px;
+        }
+    }
+    
+    &_content-info {
+        display: flex;
+        flex-direction: column;
+
+        gap: vw(4px, 320px);
+
+        @media screen and (min-width: 526px) {
+            gap: vw(4px, 744px);
+        }
+
+        @media screen and (min-width: 921px) {
+            gap: vw(4px);
+        }
+
+        @media screen and (min-width: 1440px) {
+            gap: 4px;
+        }
+    }
+    
+    &_content-info-text {
+        font-weight: 500;
+        line-height: 120%;;
+
+        font-size: vw(12px, 320px);
+
+        @media screen and (min-width: 526px) {
+            font-size: vw(12px, 744px);
+        }
+
+        @media screen and (min-width: 921px) {
+            font-size: vw(16px);
+        }
+
+        @media screen and (min-width: 1440px) {
+            font-size: 16px;
+        }
+
+        &b {
+            font-weight: 700;
+        }
+    }
+
+    &_goods-list {
+
+
+        @media screen and (min-width: 526px) {
+    
+        }
+        
+        @media screen and (min-width: 921px) {
+            
+        }
+        
+        @media screen and (min-width: 1440px) {
+            
+        }
+    }
+
+    &_content-form {
+        @media screen and (min-width: 526px) {
+            
+        }
+        
+        @media screen and (min-width: 921px) {
+            
+        }
+        
+        @media screen and (min-width: 1440px) {
+            
+        }
+    }
+
+    
+    &_footer {
+        position: sticky;
+        bottom: 0px;
+        background: $white;
+        
+        padding: vw(12px, 320px);
+        box-shadow: 0px vw(-10px, 320px) vw(20px, 320px) 0px rgba(68, 93, 91, 0.1);
+
+        @media screen and (min-width: 526px) {
+            padding: vw(12px, 744px);
+            box-shadow: 0px vw(-10px, 744px) vw(20px, 744px) 0px rgba(68, 93, 91, 0.1);
+        }
+        
+        @media screen and (min-width: 921px) {
+            position: static;
+            padding: 0px;
+            box-shadow: none;
+        }
+        
+        @media screen and (min-width: 1440px) {
+            
+        }
+    }
+    
+    &_footer-button {
+        background: $acent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        border: none;
+        transition: background 0.3s ease-in-out;
+        cursor: pointer;
+
+        height: vw(40px, 320px);
+        border-radius: vw(12px, 320px);
+        gap: vw(10px, 320px);
+
+        @media screen and (min-width: 526px) {
+            height: vw(40px, 744px);
+            border-radius: vw(12px, 744px);
+            gap: vw(10px, 744px);
+        }
+        
+        @media screen and (min-width: 921px) {
+            height: vw(40px);
+            border-radius: vw(12px);
+            gap: vw(10px);
+
+            &:hover {
+                background: $dark-light;
+    
+                & * {
+                    color: $white;
+                    fill: $white;
+                }
+            }
+        }
+        
+        @media screen and (min-width: 1440px) {
+            height: 40px;
+            border-radius: 12px;
+            gap: 10px;
+        }
+
+        &:active {
+            background: $dark-light;
+
+            & * {
+                color: $white;
+                fill: $white;
+            }
+        }
+    }
+    
+    &_footer-button-text {
+        font-weight: 600;
+        line-height: 100%;
+        color: $dark;
+
+        font-size: vw(16px, 320px);
+
+        @media screen and (min-width: 526px) {
+            font-size: vw(16px, 744px);
+        }
+        
+        @media screen and (min-width: 921px) {
+            font-size: vw(16px);
+        }
+        
+        @media screen and (min-width: 1440px) {
+            font-size: 16px;
+        }
+    }
+
+    &_footer-button-icon {
+        width: vw(20px, 320px);
+        height: vw(20px, 320px);
+
+        @media screen and (min-width: 526px) {
+            width: vw(20px, 744px);
+            height: vw(20px, 744px);
+        }
+        
+        @media screen and (min-width: 921px) {
+            width: vw(24px);
+            height: vw(24px);
+        }
+        
+        @media screen and (min-width: 1440px) {
+            width: 24px;
+            height: 24px;
+        }
+    }
+}
+
+.goods-list {
+    display: flex;
+    flex-direction: column;
+
+    gap: vw(24px, 320px);
+
+    @media screen and (min-width: 526px) {
+        gap: vw(24px, 744px);
+    }
+
+    @media screen and (min-width: 921px) {
+        gap: vw(16px);
+    }
+
+    @media screen and (min-width: 1440px) {
+        gap: 16px;
+    }
+
+    &_item {
+        display: flex;
+        align-items: center;
+        
+        gap: vw(16px, 320px);
+
+        @media screen and (min-width: 526px) {
+            gap: vw(16px, 744px);
+        }
+
+        @media screen and (min-width: 921px) {
+            gap: vw(16px);
+        }
+
+        @media screen and (min-width: 1440px) {
+            gap: 16px;
+        }
+    }
+    
+    &_item-image {
+
+
+        @media screen and (min-width: 526px) {
+            
+        }
+
+        @media screen and (min-width: 921px) {
+            
+        }
+
+        @media screen and (min-width: 1440px) {
+            
+        }
+
+        img {
+            vertical-align: bottom;
+
+            width: vw(60px, 320px);
+            height: vw(60px, 320px);
+            border-radius: vw(30px, 320px);
+
+            @media screen and (min-width: 526px) {
+                width: vw(60px, 744px);
+                height: vw(60px, 744px);
+                border-radius: vw(30px, 744px);
+
+            }
+    
+            @media screen and (min-width: 921px) {
+                width: vw(80px);
+                height: vw(80px);
+                border-radius: vw(40px);
+            }
+    
+            @media screen and (min-width: 1440px) {
+                width: 80px;
+                height: 80px;
+                border-radius: 40px;
+            }
+        }
+    }
+    
+    &_item-info {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        gap: vw(4px, 320px);
+
+        @media screen and (min-width: 526px) {
+            gap: vw(4px, 744px);
+        }
+
+        @media screen and (min-width: 921px) {
+            gap: vw(4px);
+        }
+
+        @media screen and (min-width: 1440px) {
+            gap: 4px;
+        }
+    }
+    
+    &_item-header {
+        display: flex;
+        justify-content: space-between;
+
+        gap: vw(8px, 320px);
+
+        @media screen and (min-width: 526px) {
+            gap: vw(8px, 744px);
+        }
+
+        @media screen and (min-width: 921px) {
+            gap: vw(12px);
+        }
+
+        @media screen and (min-width: 1440px) {
+            gap: 12px;
+        }
+    }
+    
+    &_item-header-text {
+        display: flex;
+        flex-direction: column;
+
+        gap: vw(4px, 320px);
+
+        @media screen and (min-width: 526px) {
+            gap: vw(4px, 744px);
+        }
+
+        @media screen and (min-width: 921px) {
+            gap: vw(10px);
+        }
+
+        @media screen and (min-width: 1440px) {
+            gap: 10px;
+        }
+    }
+    
+    &_item-title {
+        font-weight: 500;
+        line-height: 120%;
+
+        font-size: vw(12px, 320px);
+
+        @media screen and (min-width: 526px) {
+            font-size: vw(12px, 744px);
+        }
+
+        @media screen and (min-width: 921px) {
+            max-width: vw(280px);
+            font-size: vw(14px);
+        }
+
+        @media screen and (min-width: 1440px) {
+            max-width: 280px;
+            font-size: 14px;
+        }
+    }
+    
+    &_item-text {
+        font-weight: 500;
+        line-height: 120%;
+        color: $acent-sec;
+
+        font-size: vw(10px, 320px);
+
+        @media screen and (min-width: 526px) {
+            font-size: vw(10px, 744px);
+        }
+
+        @media screen and (min-width: 921px) {
+            font-size: vw(12px);
+        }
+
+        @media screen and (min-width: 1440px) {
+            font-size: 12px;
+        }
+    }
+    
+    &_item-remove {
+        background: $secondary;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        cursor: pointer;
+        transition: opacity 0.3s ease-in-out;
+
+        min-width: vw(40px, 320px);
+        max-width: vw(40px, 320px);
+        height: vw(40px, 320px);
+        border-radius: vw(12px, 320px);
+
+        @media screen and (min-width: 526px) {
+            min-width: vw(40px, 744px);
+                max-width: vw(40px, 744px);
+            height: vw(40px, 744px);
+            border-radius: vw(12px, 744px);
+        }
+
+        @media screen and (min-width: 921px) {
+            min-width: vw(40px);
+                max-width: vw(40px);
+            height: vw(40px);
+            border-radius: vw(12px);
+            
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+
+        @media screen and (min-width: 1440px) {
+            min-width: 40px;
+            max-width: 40px;
+            height: 40px;
+            border-radius: 12px;
+        }
+
+        &:active {
+            opacity: 0.5;
+        }
+    }
+    
+    &_item-remove-icon {
+        width: vw(20px, 320px);
+        height: vw(20px, 320px);
+
+        @media screen and (min-width: 526px) {
+            width: vw(20px, 744px);
+            height: vw(20px, 744px);
+        }
+
+        @media screen and (min-width: 921px) {
+            width: vw(28px);
+            height: vw(28px);
+        }
+
+        @media screen and (min-width: 1440px) {
+            width: 28px;
+            height: 28px;
+        }
+    }
+
+    &_item-price {
+
+    }
+}
+
+.price-block {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    @media screen and (min-width: 526px) {
+        
+    }
+    
+    @media screen and (min-width: 921px) {
+        
+    }
+    
+    @media screen and (min-width: 1440px) {
+        
+    }
+    
+    &_counter {
+        display: flex;
+        background: $white;
+        align-items: center;
+        border: solid $gray-light;
+        
+        border-radius: vw(8px, 320px);
+        border-width: vw(1px, 320px);
+        padding: 0px vw(8px, 320px);
+        height: vw(36px, 320px);
+        gap: vw(8px, 320px);
+
+        @media screen and (min-width: 526px) {
+            border-radius: vw(8px, 744px);
+            border-width: vw(1px, 744px);
+            padding: 0px vw(8px, 744px);
+            height: vw(36px, 744px);
+            gap: vw(8px, 744px);
+        }
+        
+        @media screen and (min-width: 921px) {
+            border-radius: vw(12px);
+            border-width: vw(1px);
+            padding: 0px vw(8px);
+            height: vw(40px);
+            gap: vw(8px);
+        }
+        
+        @media screen and (min-width: 1440px) {
+            border-radius: 12px;
+            border-width: 1px;
+            padding: 0px 8px;
+            height: 40px;
+            gap: 8px;
+        }
+    }
+    
+    &_counter-button {
+        background: $acent;
+        border: none;
+        transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+        cursor: pointer;
+        line-height: 0%;
+        font-weight: 500;
+
+        width: vw(24px, 320px);
+        height: vw(24px, 320px);
+        border-radius: vw(4px, 320px);
+        font-size: vw(16px, 320px);
+
+        @media screen and (min-width: 526px) {
+            width: vw(24px, 744px);
+            height: vw(24px, 744px);
+            border-radius: vw(4px, 744px);
+            font-size: vw(16px, 744px);
+        }
+        
+        @media screen and (min-width: 921px) {
+            width: vw(24px);
+            height: vw(24px);
+            border-radius: vw(4px);
+            font-size: vw(16px);
+            
+
+            &:hover {
+                background: $dark-light;
+                color: $white;
+            }
+        }
+        
+        @media screen and (min-width: 1440px) {
+            width: 24px;
+            height: 24px;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        &:active {
+            background: $dark-light;
+            color: $white;
+        }
+    }
+    
+    &_counter-value {
+        font-weight: 600;
+        line-height: 120%;
+
+        font-size: vw(12px, 320px);
+
+        @media screen and (min-width: 526px) {
+            font-size: vw(12px, 744px);
+        }
+        
+        @media screen and (min-width: 921px) {
+            font-size: vw(16px);
+        }
+        
+        @media screen and (min-width: 1440px) {
+            font-size: 16px;
+        }
+    }
+    
+    &_price {
+        margin-left: auto;
+        font-weight: 600;
+        line-height: 120%;
+
+        font-size: vw(16px, 320px);
+
+        @media screen and (min-width: 526px) {
+            font-size: vw(16px, 744px);
+        }
+        
+        @media screen and (min-width: 921px) {
+            font-size: vw(24px);
+        }
+        
+        @media screen and (min-width: 1440px) {
+            font-size: 24px;
+        }
+    }
+}

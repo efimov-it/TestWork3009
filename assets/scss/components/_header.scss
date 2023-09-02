@@ -1,0 +1,203 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba($color: $white, $alpha: 0.80);
+    width: 100%;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+
+    box-shadow: 0px vw(10px, 320px) vw(20px, 320px) 0px rgba(68, 93, 91, 0.10);
+    padding: vw(12px, 320px) vw(20px, 320px);
+    gap: vw(8px, 320px);
+    border-radius: 0px 0px vw(12px, 320px) vw(12px, 320px);
+    backdrop-filter: blur(vw(10px, 320px));
+
+    @media screen and (min-width: 526px) {
+        padding: vw(12px, 744px) vw(20px, 744px);
+        gap: vw(8px, 744px);
+        border-radius: 0px 0px vw(12px, 744px) vw(12px, 744px);
+        box-shadow: 0px vw(10px, 744px) vw(20px, 744px) 0px rgba(68, 93, 91, 0.10);
+        backdrop-filter: blur(vw(10px, 744px));
+    }
+    
+    @media screen and (min-width: 921px) {
+        background: rgba($color: $white, $alpha: 0.40);
+        position: static;
+        justify-content: flex-start;
+        width: vw(800px);
+        padding: vw(20px) vw(32px);
+        gap: vw(32px);
+        border-radius: vw(20px);
+        min-height: vw(104px);
+        max-height: vw(104px);
+        backdrop-filter: blur(vw(10px));
+        margin: vw(40px) auto vw(32px) calc(50% - #{vw(680px)});
+        box-shadow: none;
+    }
+    
+    @media screen and (min-width: 1440px) {
+        width: 800px;
+        padding: 20px 32px;
+        gap: 32px;
+        border-radius: 20px;
+        min-height: 104px;
+        max-height: 104px;
+        backdrop-filter: blur(10px);
+        margin: 40px auto 32px calc(50% - 680px);
+    }
+    
+    &_logo {
+        
+
+        @media screen and (min-width: 526px) {
+            
+        }
+        
+        @media screen and (min-width: 921px) {
+            
+        }
+        
+        @media screen and (min-width: 1440px) {
+
+        }
+    }
+    
+    &_logo-img {
+        width: vw(40px, 320px);
+        height: vw(28px, 320px);
+
+        @media screen and (min-width: 526px) {
+            width: vw(40px, 744px);
+            height: vw(28px, 744px);
+        }
+        
+        @media screen and (min-width: 921px) {
+            width: vw(78px);
+            height: vw(56px);
+        }
+        
+        @media screen and (min-width: 1440px) {
+            width: 78px;
+            height: 56px;
+        }
+    }
+    
+    &_separator {
+        display: none;
+        
+        @media screen and (min-width: 921px) {
+            display: block;
+            background: #C5BAB4;
+
+            width: vw(1px);
+            height: vw(64px);
+        }
+        
+        @media screen and (min-width: 1440px) {
+            width: 1px;
+            height: 64px;
+        }
+    }
+    
+    &_description {
+        font-weight: 500;
+        line-height: 120%;
+        text-align: center;
+
+        font-size: vw(10px, 320px);
+
+        @media screen and (min-width: 526px) {
+            font-size: vw(16px, 744px);
+        }
+        
+        @media screen and (min-width: 921px) {
+            text-align: left;
+
+            font-size: vw(16px);
+        }
+        
+        @media screen and (min-width: 1440px) {
+            font-size: 16px;
+        }
+    }
+    
+    &_contact {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        width: vw(40px, 320px);
+        height: vw(40px, 320px);
+
+        @media screen and (min-width: 526px) {
+            width: vw(40px, 744px);
+            height: vw(40px, 744px);
+        }
+        
+        @media screen and (min-width: 921px) {
+            width: auto;
+            height: auto;
+
+            gap: vw(8px);
+        }
+        
+        @media screen and (min-width: 1440px) {
+            gap: 8px;
+        }
+    }
+
+    &_contact-icon {
+        width: vw(20px, 320px);
+        height: vw(20px, 320px);
+
+        @media screen and (min-width: 526px) {
+            width: vw(20px, 744px);
+            height: vw(20px, 744px);
+        }
+        
+        @media screen and (min-width: 921px) {
+            width: vw(28px);
+            height: vw(28px);
+        }
+        
+        @media screen and (min-width: 1440px) {
+            width: 28px;
+            height: 28px;
+        }
+    }
+    
+    &_contact-text {
+        display: none;
+        
+        @media screen and (min-width: 921px) {
+            display: block;
+            white-space: nowrap;
+            color: $dark;
+            font-weight: 500;
+            line-height: 100%;
+
+            font-size: vw(16px);
+        }
+        
+        @media screen and (min-width: 1440px) {
+            font-size: 16px;
+        }
+    }
+}
+
+
+
+@media screen and (min-width: 526px) {
+        
+}
+
+@media screen and (min-width: 921px) {
+    
+}
+
+@media screen and (min-width: 1440px) {
+    
+}
